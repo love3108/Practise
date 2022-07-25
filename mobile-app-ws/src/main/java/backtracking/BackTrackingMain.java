@@ -20,8 +20,10 @@ public class BackTrackingMain {
 						{1,0,1,0,0,1},
 						{0,1,0,0,0,1},
 						{0,1,1,1,1,0}};
-		GraphColoringImpl impl=new GraphColoringImpl(graphColor,4);
-		impl.solve();
+		//GraphColoringImpl impl=new GraphColoringImpl(graphColor,4);
+		///impl.solve();
+		KnightsTour tour=new KnightsTour(5);
+		tour.solve();
 	}
 
 }
