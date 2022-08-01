@@ -17,6 +17,11 @@ public class DPMain {
 		int set[]= {3,4,5};
 		SubsetSum sb=new SubsetSum(set, 11);
 		sb.solve();
+		String str1="ABDEGH";
+		String str2="AIBDFHR";
+		LongestCommonSubRec rec=new LongestCommonSubRec(str1, str2);
+		rec.solve();
+		
 	}
 
 }

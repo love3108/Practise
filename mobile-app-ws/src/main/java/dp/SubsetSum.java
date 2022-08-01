@@ -36,6 +36,18 @@ public class SubsetSum {
 		}
 		return sol[set.length][sum];
 	}
+	public boolean subsetSumRec(int n,int sum) {
+		if(n<0)return false;
+		if(sum==0) return true;
+		if(set[n]>sum) {
+			return subsetSumRec(n-1, sum);
+		}else {
+			boolean include=subsetSumRec(n-1, sum-set[n-1]);
+			boolean exclude=subsetSumRec(n-1, sum);
+			return include || exclude;
+		}
+	}
+	
 	public void printSol() {
 		for(int i=0;i<=set.length;i++) {
 			for(int j=0;j<=sum;j++) {
