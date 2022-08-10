@@ -22,6 +22,10 @@ public class DPMain {
 		LongestCommonSubRec rec=new LongestCommonSubRec(str1, str2);
 		rec.solve();
 		
+		int heights[]= {1,0,2,1,3,1,2,0,3};
+		TrappingWater tr=new TrappingWater(heights);
+		tr.solve();
+		
 	}
 
 }
